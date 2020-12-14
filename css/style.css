@@ -5,18 +5,18 @@
 }
 
 .container {
-  width: 800px;
-  margin: auto;
+  width: 580px;
+  margin: 30px auto;
   font-family: 'Rowdies';
 }
 
 .container>* {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -29,9 +29,9 @@ header {
 }
 
 .title {
-  width: 40%;
-  font-size: 28px;
+  font-size: 30px;
   color: #005982;
+  text-shadow: 1px 1px #000;
 }
 
 .box {
