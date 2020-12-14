@@ -7,7 +7,7 @@ if (isNaN(km) || isNaN(age)) {
 
   alert('Grazie! Stiamo elaborando la richiesta.');
 
-  var cost = Math.ceil(km * 0.21);
+  var cost = (km * 0.21).toFixed(2);
 
   if (age <= 18) {
     cost = Math.floor(cost - (cost * 20) / 100);
@@ -19,6 +19,6 @@ if (isNaN(km) || isNaN(age)) {
 
   var result = document.getElementById('result')
 
-  result.innerHTML = 'Il prezzo del biglietto è di Euro <strong>' + (cost) + ',00</strong>. Le auguriamo Buon viaggio!';
+  result.innerHTML = 'Il prezzo del biglietto è di Euro <strong>' + (cost) + '. Le auguriamo Buon viaggio!';
 
 }
