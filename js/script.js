@@ -2,7 +2,8 @@ var km = parseInt(prompt('Quanti Km percorrerà il passeggero, durante il viaggi
 var age = parseInt(prompt('Quanti anni ha il passeggero?'));
 
 if (isNaN(km) || isNaN(age)) {
-  alert('Ti preghiamo di utilizzare soltanto caratteri numerici.')
+  alert('Ti preghiamo di utilizzare soltanto caratteri numerici.');
+  location.reload();
 } else {
 
   alert('Grazie! Stiamo elaborando la richiesta.');
@@ -17,8 +18,7 @@ if (isNaN(km) || isNaN(age)) {
     cost = Math.floor(cost - (cost * 40) / 100);
   };
 
-  var result = document.getElementById('result')
+  var result = document.getElementById('result');
 
-  result.innerHTML = 'Il prezzo del biglietto è di Euro <strong>' + (cost) + '. Le auguriamo Buon viaggio!';
-
-}
+  result.innerHTML = 'Il prezzo del biglietto è di Euro <strong>' + (cost) + '</strong>. Le auguriamo Buon viaggio!';
+};
