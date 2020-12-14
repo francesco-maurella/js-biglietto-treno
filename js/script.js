@@ -19,7 +19,9 @@ if (isNaN(km) || isNaN(age)) {
     cost = cost - ((cost * 40) / 100);
   };
 
+  cost = (cost).toFixed(2);
+
   var result = document.getElementById('result');
 
-  result.innerHTML = 'Il prezzo del biglietto è di <strong>Euro ' + (cost).toFixed(2) + '</strong>. Le auguriamo Buon viaggio!';
+  result.innerHTML = 'Il prezzo del biglietto è di <strong>Euro ' + cost + '</strong>. Le auguriamo Buon viaggio!';
 };
