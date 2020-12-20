@@ -1,4 +1,4 @@
-alert('ticket.train ti da il Benvenuto!\nCompila i campi seguenti per conoscere la tariffa del tuo viaggio.')
+alert('ticket.train ti da il Benvenuto!\nCompila i campi seguenti per conoscere la tariffa del tuo viaggio.');
 var km = parseInt(prompt('Quanti Km percorrerà il passeggero?'));
 var age = parseInt(prompt('Quanti anni ha il passeggero?'));
 
